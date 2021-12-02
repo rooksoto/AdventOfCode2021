@@ -6,9 +6,10 @@ import java.io.File
 
 class SonarSweepPartTwo : Puzzle {
 
-    private val values = File("${BASE_PATH}/day1/input.txt")
-        .readLines()
-        .map { it.toInt() }
+    private val values: List<Int> =
+        File("${BASE_PATH}/day1/input.txt")
+            .readLines()
+            .map { it.toInt() }
 
     override fun solve(): Int =
         with(values.windowed(3, 1, false) { it.sum() }) {

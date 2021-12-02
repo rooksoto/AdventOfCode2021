@@ -1,7 +1,7 @@
 package com.equipoisegames.adventofcode2021
 
-import com.equipoisegames.adventofcode2021.puzzles.day1.SonarSweepPartTwo
+import com.equipoisegames.adventofcode2021.puzzles.day2.DivePartTwo
 
 fun main() {
-    println(SonarSweepPartTwo().solve())
+    println(DivePartTwo().solve())
 }
